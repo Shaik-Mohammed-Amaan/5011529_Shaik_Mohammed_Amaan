@@ -1,0 +1,38 @@
+**LinkedList**
+
+Linked Lists are data structures consisting of nodes, where each node contains a data element and a reference (or link)
+to the next node in the sequence. Unlike arrays, linked lists do not store elements in contiguous memory locations,
+which allows for more efficient memory utilization and dynamic data management.
+
+Types of Linked Lists:
+
+Singly Linked List: Each node contains a single link to the next node. It allows traversal in one direction (forward).
+Doubly Linked List: Each node contains two links, one to the next node and one to the previous node.
+It allows traversal in both directions (forward and backward).
+Circular Linked List: The last node points back to the first node, forming a circle. It can be singly or doubly linked.
+
+**Analysis**
+
+Time Complexity of Operations:
+
+Add Task:
+Time Complexity: O(n) (must traverse to the end of the list to add a new node).
+Space Complexity: O(1) (additional space only for the new node).
+
+Search Task:
+Time Complexity: O(n) (linear search through the list).
+
+Traverse Tasks:
+Time Complexity: O(n) (visiting each node).
+
+Delete Task:
+Time Complexity: O(n) (finding the task and possibly updating links).
+
+**Advantages of Linked Lists over Arrays**
+
+Dynamic Size: Linked lists can grow and shrink dynamically, allowing for efficient memory use without the need to
+declare a fixed size in advance.
+Ease of Insertion/Deletion: Inserting or deleting elements in a linked list can be done in O(1) time if the node
+reference is known, without the need to shift elements (as in arrays).
+Memory Utilization: Memory allocation for linked lists is more flexible and does not require contiguous memory blocks,
+which can be an advantage in scenarios with fragmented memory.

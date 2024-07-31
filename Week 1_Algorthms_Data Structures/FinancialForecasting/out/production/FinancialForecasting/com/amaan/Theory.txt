@@ -1,0 +1,23 @@
+**Recursion**
+
+Recursion is a technique in programming where a function calls itself to solve a problem. It simplifies problems that
+have repetitive structures or can be divided into similar sub-problems.
+
+Recursion typically involves:
+
+Base Case: The condition under which the recursion stops. It prevents infinite recursion.
+Recursive Case: The part where the function calls itself with a smaller or simpler input.
+
+**Analysis**
+
+Time Complexity:
+
+The time complexity of this recursive approach is O(n), where n is the number of years. This is because each recursive
+call processes one year until the base case is reached.
+
+**Optimization and Avoiding Excessive Computation**
+
+Memoization: Store the results of previous calculations to avoid recalculating values. This technique reduces the number
+of recursive calls and speeds up the computation.
+Iterative Approach: For simple cases like this, an iterative approach can be more efficient and easier to understand.
+Iterative methods generally use a loop instead of recursion and do not suffer from the overhead of function calls.

@@ -1,0 +1,42 @@
+
+**Bubble Sort**
+
+Description: It is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps
+them if they are in the wrong order.
+Time Complexity: O(n^2) in the worst and average cases. O(n) in the best case (when the list is already sorted).
+Space Complexity: O(1) (in-place sorting).
+
+**Insertion Sort**
+Description: It builds the final sorted array one item at a time, with each iteration removing one element from the input
+data, finding the location it belongs within the sorted list, and inserting it there.
+Time Complexity: O(n^2) in the worst and average cases. O(n) in the best case.
+Space Complexity: O(1) (in-place sorting).
+
+**Quick Sort**
+Description: IIt is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and
+partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.
+Time Complexity: O(n log n) on average. O(n^2) in the worst case (when the pivot selection is poor).
+Space Complexity: O(log n) (due to recursive calls).
+
+**Merge Sort**
+Description: It is a divide-and-conquer algorithm that divides the unsorted array into n subarrays, each containing one
+element, and then repeatedly merges subarrays to produce new sorted subarrays until there is only one subarray remaining.
+Time Complexity: O(n log n) in all cases.
+Space Complexity: O(n) (requires additional space for merging).
+
+**Analysis**
+
+Performance Comparison:
+
+Bubble Sort:
+Time Complexity: O(n^2) in the worst and average cases. O(n) in the best case (already sorted array).
+Space Complexity: O(1) (in-place sorting).
+Drawbacks: Not suitable for large datasets due to its quadratic time complexity. It's inefficient and generally slower
+compared to more advanced sorting algorithms.
+
+Quick Sort:
+Time Complexity: O(n log n) on average. O(n^2) in the worst case (poor pivot selection, such as always picking the
+largest or smallest element).
+Space Complexity: O(log n) due to recursive calls, but this can be reduced with optimizations like tail call elimination.
+Advantages: Generally faster and more efficient for large datasets compared to Bubble Sort. It's widely used in
+practice due to its average-case performance and ease of implementation.

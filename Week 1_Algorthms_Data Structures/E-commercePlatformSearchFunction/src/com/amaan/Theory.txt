@@ -1,0 +1,45 @@
+**Big O Notation**
+
+Big O notation is a mathematical notation used to describe the upper bound of an algorithm's running time or space
+requirements in terms of the input size (n). It provides a way to classify algorithms according to their worst-case or
+asymptotic behavior.
+
+Best, Average, and Worst-Case Scenarios:
+
+Best Case: The scenario where the algorithm performs the minimum number of operations.
+For example, in a search operation, the best case occurs when the target element is the first element in the dataset.
+
+Average Case: The scenario where the algorithm performs the average number of operations,
+averaged over all possible inputs of a given size.
+
+Worst Case: The scenario where the algorithm performs the maximum number of operations.
+For example, in a search operation, the worst case occurs when the target element is not present or is the last element
+in the dataset.
+
+**Analysis**
+
+Time Complexity Comparison:
+
+Linear Search:
+Best Case: O(1) (Target element is the first element)
+Average Case: O(n) (Target element is randomly located)
+Worst Case: O(n) (Target element is the last element or not present)
+Space Complexity: O(1) (No extra space is used)
+
+Binary Search:
+Best Case: O(1) (Target element is at the mid-point of the array)
+Average Case: O(log n) (Search space is halved each time)
+Worst Case: O(log n) (Target element is not present)
+Space Complexity: O(1) (No extra space is used)
+
+Suitability for E-commerce Platform:
+
+Linear Search: It is simple to implement and does not require the array to be sorted. However, it is inefficient for large
+datasets due to its O(n) time complexity.
+
+Binary Search: It is more efficient than linear search for large datasets, with a time complexity of O(log n).
+However, it requires the array to be sorted, which could involve additional overhead if the dataset is frequently updated.
+
+For an e-commerce platform, where fast search performance is critical due to large inventories, binary search
+is more suitable if the dataset is sorted or can be kept sorted with minimal overhead.
+

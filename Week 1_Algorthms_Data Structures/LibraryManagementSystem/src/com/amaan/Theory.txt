@@ -1,0 +1,36 @@
+Linear Search:
+
+Description: Linear search involves iterating through each element in the dataset until the desired element is found or
+the end of the dataset is reached.
+Time Complexity: O(n), where n is the number of elements in the dataset.
+Use Case: Suitable for unsorted datasets or when the dataset size is small.
+
+Binary Search:
+
+Description: Binary search is an efficient algorithm that works on sorted datasets. It divides the dataset into two
+halves and determines which half contains the target element, recursively narrowing down the search range.
+Time Complexity: O(log n), where n is the number of elements in the dataset.
+Use Case: Suitable for large, sorted datasets.
+
+**Analysis**
+
+Time Complexity:
+
+Linear Search:
+Time Complexity: O(n), where n is the number of books.
+Best Case: O(1) (if the book is the first element).
+Worst Case: O(n) (if the book is the last element or not found).
+
+Binary Search:
+Time Complexity: O(log n), where n is the number of books.
+Best Case: O(1) (if the book is at the middle index in the first comparison).
+Worst Case: O(log n) (requires multiple comparisons and narrowing down).
+
+**Comparison and Use Cases**
+
+Linear Search:
+Use: When the dataset is unsorted, or the dataset size is relatively small, making the overhead of sorting unnecessary.
+Advantages: Simple to implement and does not require data to be sorted.
+Binary Search:
+Use: When the dataset is sorted, and fast search times are crucial, especially in large datasets.
+Advantages: Faster than linear search for large datasets due to its logarithmic time complexity.

@@ -1,0 +1,46 @@
+**Array Representation in Memory**
+
+An array is a contiguous block of memory locations that store elements of the same data type. Each element in the array
+is accessed using an index, which is calculated based on the starting address of the array and the size of each element.
+
+**Advantages**
+
+Direct Access: Arrays allow for constant time access (O(1)) to elements using an index, which makes them efficient for
+scenarios where quick access to elements is needed.
+Memory Efficiency: Arrays require less memory overhead compared to other data structures like linked lists, as they do
+not require additional memory for pointers or links.
+Predictable Memory Usage: Memory is allocated in a contiguous block, which can be advantageous for memory management.
+Easy Traversal: Arrays are straightforward to traverse using loops.
+
+**Analysis**
+
+Time Complexity of Operations:
+
+Add Employee:
+Average Case: O(1) (appending to the array if space is available).
+Worst Case: O(n) (when the array needs to be resized and elements copied).
+
+Search Employee:
+Time Complexity: O(n) (linear search, where n is the number of employees).
+
+Traverse Employees:
+Time Complexity: O(n) (must visit each employee record).
+
+Delete Employee:
+Time Complexity: O(n) (searching for the employee and shifting elements).
+
+**Limitations of Arrays**
+
+Fixed Size: The size of an array is fixed upon creation. Dynamic resizing, while possible, requires copying all elements
+to a new array, which can be costly.
+Inefficient Insertion and Deletion: Inserting or deleting an element in the middle of an array requires shifting
+elements, resulting in O(n) time complexity.
+Memory Waste: Allocating more memory than needed can lead to unused space, while insufficient allocation requires
+resizing, which is inefficient.
+
+**When to Use Arrays**
+
+Direct Access Required: When fast and direct access to elements is necessary.
+Fixed Size Data: When the number of elements is known and relatively stable.
+Memory Efficiency: When memory overhead should be minimized, and the data size fits well in contiguous memory.
+

@@ -1,0 +1,48 @@
+**Importance of Data Structures and Algorithms**
+
+In an inventory management system, efficient data storage and retrieval are crucial due to the large number
+of items and there is a need for quick access to the data. Key operations like adding new products, updating product
+details, deleting products, and searching for specific product must be performed effectively to maintain efficiency and
+accuracy in managing the inventory.
+
+**Suitable Data Structures**
+
+ArrayList:
+
+Pros: Dynamic size, simple to use.
+Cons: Searching, inserting, or deleting an element (other than at the end) has an average time complexity of O(n) due to
+shifting the elements.
+
+HashMap:
+
+Pros: Average O(1) time complexity for insertions, deletions, and searching. This is ideal for storing and accessing
+product details using a unique key (e.g., productId).
+Cons: Requires more memory due to storing keys and values, and hash collisions can decrease performance.
+
+For this example, HashMap is often a better choice due to its efficient handling of large data sets with unique keys.
+
+**Analysis**
+
+**Time Complexity**
+
+Add Product (addProduct):
+Time Complexity: O(1)
+
+Update Product (updateProduct):
+Time Complexity: O(1)
+
+Delete Product (deleteProduct):
+Time Complexity: O(1)
+
+**Optimization**
+
+Hash Collision Handling: Ensuring that the hash function distributes keys evenly to minimize collisions,
+which can degrade performance.
+
+Scalability: For very large data sets or distributed systems,we can distributed data stores like Redis, which
+also provide efficient key-value storage with additional features such as persistence and replication.
+
+
+
+
+
