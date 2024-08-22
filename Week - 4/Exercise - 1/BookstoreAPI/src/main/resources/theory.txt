@@ -1,0 +1,75 @@
+1. Java 17 Baseline
+Java 17 Compatibility: Spring Boot 3 requires Java 17 as a minimum baseline. This leverages the long-term support (LTS)
+features of Java 17, such as new language features, performance enhancements, and security updates.
+Switch Expressions: Java 17 introduced pattern matching and switch expressions, which are now more seamlessly integrated
+into Spring Boot 3 applications.
+Enhanced JDK APIs: You can use modern Java features like Record, Text Blocks, and Sealed Classes in your applications.
+
+2. Jakarta EE 9+ Compatibility
+Migration to Jakarta EE 9+: One of the major changes in Spring Boot 3 is the shift from the javax.* namespace to the
+jakarta.* namespace. This change aligns Spring Boot 3 with Jakarta EE 9+ standards, ensuring compatibility with modern
+enterprise environments.
+Updated Dependencies: All underlying libraries (such as Hibernate, Tomcat, etc.) have been upgraded to use the jakarta.*
+namespace, necessitating a code migration for legacy applications.
+
+3. GraalVM Native Image Support
+Native Image Compilation: Spring Boot 3 introduces first-class support for GraalVM Native Images, allowing your
+applications to be compiled ahead-of-time (AOT) into native executables. This results in:
+Faster startup times
+Lower memory consumption
+Improved performance for cloud and containerized environments
+Spring AOT Plugin: The spring-aot-maven-plugin or spring-aot-gradle-plugin helps you prepare your application for native
+compilation by performing transformations on beans and configurations.
+
+4. Improved Observability
+Micrometer Observation: Spring Boot 3 integrates with Micrometer Observation, a new abstraction for distributed tracing
+and metrics collection. This enhances observability by automatically generating traces and spans for key Spring components.
+Improved Actuator: Spring Boot 3 extends the capabilities of Spring Actuator with better integration with modern
+observability tools like Prometheus, Grafana, and OpenTelemetry.
+
+5. Security Enhancements
+Spring Security 6: Spring Boot 3 adopts Spring Security 6, which includes several enhancements such as:
+Support for OAuth 2.1: Bringing compliance with the latest OAuth and OpenID standards.
+Security without XML: Improved programmatic configuration using the SecurityFilterChain API, reducing reliance on XML
+configurations.
+Simplified Authorization Configuration: A streamlined API for setting up common security features like JWTs, CORS, and
+CSRF protection.
+
+6. Spring Web Enhancements
+HTTP/2 and HTTP/3 Support: Spring Boot 3 brings enhanced support for modern web protocols, including HTTP/2 and HTTP/3.
+This allows faster, more efficient communication between clients and servers.
+Improved WebSockets: Better support for WebSockets in reactive and non-reactive applications.
+Enhanced API Documentation: Integration with SpringDoc OpenAPI has been improved, allowing better auto-generation of API
+documentation.
+
+7. Spring Native Retirement and Merging
+Merging of Spring Native: The Spring Native project has been retired as its core features
+(like GraalVM native image support) have been integrated into Spring Boot 3 directly. This consolidation simplifies the
+toolchain for developers.
+
+8. Kotlin and Coroutines Enhancements
+Kotlin 1.7+: Spring Boot 3 embraces Kotlin 1.7+, bringing support for new language features and performance optimizations.
+Coroutines Support: Improved out-of-the-box support for Kotlin coroutines in web applications and reactive programming.
+Null Safety: Enhanced handling of nullability with Kotlin’s null-safety features throughout Spring APIs.
+
+9. Improved Testability
+Test Containers: Spring Boot 3 has improved integration with Testcontainers, allowing easier usage of containerized
+services in tests.
+JUnit 5 Enhancements: Additional JUnit 5 features have been adopted, making tests more expressive and powerful.
+
+10. Enhanced Configuration and Modularity
+Profile-specific Configurations: Configuration profiles now support more modular and hierarchical configuration, making
+it easier to separate environment-specific settings (e.g., application-dev.yaml or application-prod.yaml).
+Config Data API Enhancements: Improvements to the Config Data API, which was introduced in Spring Boot 2.4, to better
+manage external configurations from files, databases, and environments.
+
+11. Core Performance and Efficiency Enhancements
+Improved Startup Time: With various optimizations in dependency management, caching, and component scanning, Spring Boot
+3 improves startup times for both regular and reactive applications.
+Optimized Memory Footprint: Enhancements in memory usage through better handling of class loading and resource management.
+
+12. Deprecations and Removals
+Removal of Legacy Features: Some old and less-used features have been deprecated or removed. These include certain
+properties in application.properties, legacy template engines, and older data access technologies.
+Upgrade Path: Applications migrating from Spring Boot 2.x to 3.x need to follow specific upgrade steps due to the
+namespace changes (javax.* to jakarta.*) and other breaking changes in the libraries used.
